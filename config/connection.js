@@ -7,6 +7,7 @@ let sequelize;
 // This is set if app is deployed to Heroku with JawsDB.
 if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
+
 // otherwise, connects to local MySQL database.
 } else {
     sequelize = new Sequelize(
